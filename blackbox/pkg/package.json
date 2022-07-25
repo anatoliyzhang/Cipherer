@@ -1,0 +1,12 @@
+{
+  "name": "blackbox",
+  "version": "0.1.0",
+  "files": [
+    "blackbox_bg.wasm",
+    "blackbox.js",
+    "blackbox.d.ts"
+  ],
+  "module": "blackbox.js",
+  "types": "blackbox.d.ts",
+  "sideEffects": false
+}
