@@ -1,0 +1,36 @@
+{
+  "name": "Cipherer",
+  "description": "A tool to create ciphered(encrypted) text, and automaticly translate the ciphered(encrypted) text to human-readable text.",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  
+  "permissions": ["activeTab", "scripting"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/Cipherer16.png",
+      "32": "/images/Cipherer32.png",
+      "48": "/images/Cipherer48.png",
+      "64": "/images/Cipherer64.png",
+      "128": "/images/Cipherer128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/Cipherer16.png",
+    "32": "/images/Cipherer32.png",
+    "48": "/images/Cipherer48.png",
+    "64": "/images/Cipherer64.png",
+    "128": "/images/Cipherer128.png"
+  },
+  
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "css": [],
+     "js": ["wasm.js", "wasm-glue.js", "content-script.js"]
+   }
+ ]
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup_style.css">
+    <script src="wasm.js"></script>
+    <script src="wasm-glue.js"></script>
+  </head>
+  <body>
+    <div>
+      <textarea id="original_text_textarea" placeholder="Here you put original text."></textarea>
+    </div>
+    <button id="encrypt_text_button">Encrypt</button>
+    <!-- <div id="encrypted_text_div"></div> -->
+    <!-- <button id="changeColor"></button> -->
+    <button id="decrypt_text_button">Decrypt</button>
+    <!-- <div id="encrypted_text_div"></div> -->
+    <!-- <div id="decrypted_text_div"></div> -->
+    <div id="result_type_div"></div>
+    <div id="copy_status">Click the result text to copy to Clipboard.</div>
+    <div id="result_text_div"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
