@@ -1,7 +1,7 @@
 # Cipherer
 This is a chrome extension, which does 2 jobs:
 1. Encrypts normal text to a ciphertext. 
-2. With this chrome extension enabled, automatically finds the encrypted text and decrypts it to normal text.
+2. With this chrome extension enabled, the encrypted text will automatically be dectypted to normal text(human readable).
 The goal of creation of this chrome extension is to bypass the internet censorship by posting the ciphertext, which is harder to be censored.
 
 # How does it work?
